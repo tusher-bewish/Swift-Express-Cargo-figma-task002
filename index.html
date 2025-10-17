@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    >
+  </script>
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!--=== custom===tailwind====setup===started===here== -->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary-gray: #353749;
+        --color-primary-blue: #0c1634;
+        --color-secondary-blue: #193071;
+        --color-secondary-gray: #b1b2b9;
+        --color-light-blue: #3990a9;
+        --color-primary-red: #cc1609;
+        --color-secondary-red: #cb5549;
+        --color-primary-cyan: #968b7c;
+        --color-secondary-white: #f9f9f9;
+
+        --shadow-primary: 0 4px 25px -4px rgba(0, 0, 0, 0.1);
+        --shadow-secondary: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+        --breakpoint-xs: 375px;
+        --breakpoint-sm: 480px;
+        --breakpoint-md: 576px;
+        --breakpoint-lg: 768px;
+        --breakpoint-xl: 1024px;
+        --breakpoint-2xl: 1320px;
+
+        --container-max-width: 1320px;
+        --container-padding-x: 1rem;
+      }
+
+      .container {
+        max-width: var(--container-max-width);
+        padding-left: var(--container-padding-x);
+        padding-right: var(--container-padding-x);
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <header
+      style="
+        background-image: url(/navbar/bodypic.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      "
+      class="h-[802px] w-full" >
+      <nav class="w-full h-auto backdrop-blur-lg fixed z-50 bg-[#1818181a] ">
+        <div class=" h-[90px]">
+          <div class="container">
+            <div class="flex flex-row w-auto    justify-between py-[10px]">
+              <img src="/navbar/logo.png" class="w-[100px] h-[52px]" alt="" />
+              <ul class="flex flex-row gap-x-8 items-center text-white">
+                <li class="text-lg font-[590] leading-[152%] hover text-white hover:text-[#89CE14]">
+                  <a href="#">Home</a>
+                </li>
+                <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                  <a href="services.html">Services</a>
+                </li>
+                <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                  <a href="about.html">About Us</a>
+                </li>
+                <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                  <a href="#">Rates</a>
+                </li>
+                <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                  <a href="#">Cost Calculator</a>
+                </li>
+                <li class="text-lg font-[590] leading-[152%] text-white hover:text-[#89CE14]">
+                  <a href="#">Benefits</a>
+                </li>
+              </ul>
+              <div class="flex flex-row gap-x-3 items-center">
+                <button
+                  class="h-auto w-auto py-3 px-[40.5px] text-white bg-linear-to-r from-[#6DA015] to-[#46C0A2] border-[1px] border-transparent ease-in-out duration-500 rounded-full hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14] hover:bg-transparent cursor-pointer text-base font-[590]"
+                >
+                  Sign Up
+                </button>
+                <button
+                  class="h-auto w-auto py-3 px-[40.5px] text-[#89CE14] bg-transparent border-[1px]
+                   border ease-in-out duration-500 rounded-full
+                    hover:border-solid border-[#89CE14] hover:text-white hover:bg-linear-to-r from-[#6DA015] to-[#46C0A2] cursor-pointer text-base font-[590]"
+                >
+                  Sign In
+                </button>
+              </div>
+            </div>
+ </nav>
+
+
+
+<div class="container  pt-[240px] ">
+
+   <div class="w-auto h-auto flex flex-row justify-between items-center">
+              <div class="mt-[25px]">
+                 <button class="w-[40px] h-[40px] bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white rounded-full
+                         border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]"
+
+           ><ion-icon name="chevron-back-outline"></ion-icon></button>
+              </div>
+              <div class="text-center w-[576px] speace-y-10">
+                <h1 class="text-[66px] text-white font-bold">Welcome to Swift Express Cargo</h1>
+                <p class="text-[20px] text-white font-normal my-3 leading-[150%]">
+                  Lorem ipsum dolor sit amet consectetur. Congue lacinia tempor orci tellus
+                  sollicitudin morbi. Duis massa sit
+                </p>
+
+                <div class="h-auto flex items-center justify-center to-[#00303d] py-5">
+                  <div
+                    class="flex items-center bg-white/10 border-2 border-green-800 rounded-full overflow-hidden shadow-lg p-1"
+                  >
+                    <input
+                      type="text"
+                      placeholder=" Tracking Number"
+                      class="w-[400px] bg-transparent text-white placeholder:text-[18px] placeholder:font-[100] text-lg focus:outline-none pl-3"
+                    />
+                    <button
+                      class="h-auto w-auto py-3 px-[40.5px] text-white
+                       bg-linear-to-r from-[#6DA015] to-[#46C0A2] border-[1px] border-transparent ease-in-out duration-500
+                        rounded-full hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base font-[590]"
+                    >
+                      Track Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-[29px]">
+               <button class="w-[40px] h-[40px] bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white rounded-full
+                         border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2] ">
+                         <ion-icon name="chevron-forward-outline"></ion-icon></button>
+              </div>
+            </div>
+
+            <div class="flex flex-row items-center pt-[50px] justify-center gap-x-3">
+              <div><img src="assets/image/Rectangle 3842.png" alt="" /></div>
+              <div><img src="assets/image/Rectangle 3844.png" alt="" /></div>
+              <div><img src="assets/image/Rectangle 3844.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+       </div> 
+       
+    </header>
+
+
+    <section id="my" class="container bg-secondary-white py-[25px]">
+      <div class="flex flex-row justify-between">
+        <h3 class="text-[36px] font-[700] text-[#333333] leading-[132%]">Popular Brands</h3>
+
+        <div class="flex flex-row gap-x-3">
+          <button class="w-[40px] h-[40px] bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white rounded-full
+                         border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]"
+
+           ><ion-icon name="chevron-back-outline"></ion-icon></button>
+
+          <button class="w-[40px] h-[40px] bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white rounded-full
+                         border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2] ">
+                         <ion-icon name="chevron-forward-outline"></ion-icon></button>
+        </div>
+      </div>
+      <div class="grid lg:grid-cols-7 sm:grid-cols-1 gap-6 h-auto w-auto py-[20px] gap-x-7">
+        <div class="p-3 bg-[#EAEAEA] text-center rounded-[10px]">
+          <img src="/brandlogo/1st.png" class="mx-auto" alt="" />
+          <h4 class="text-[#606060] text-[24px] font-[500] leading-[150%]">Babymel</h4>
+        </div>
+        <div class="p-3 bg-[#EAEAEA] text-center rounded-[10px]">
+          <img src="/brandlogo/2nd.png" class="mx-auto" alt="" />
+          <h4 class="text-[#606060] text-[24px] font-[500] leading-[150%]">Burberry</h4>
+        </div>
+
+        <div class="p-3 bg-[#EAEAEA] text-center rounded-[10px]">
+          <img src="/brandlogo/3rd.png" class="mx-auto" alt="" />
+          <h4 class="text-[#606060] text-[24px] font-[500] leading-[150%]">Camper</h4>
+        </div>
+
+        <div class="p-3 bg-[#EAEAEA] text-center rounded-[10px]">
+          <img src="/brandlogo/4th.png" class="mx-auto" alt="" />
+          <h4 class="text-[#606060] text-[24px] font-[500] leading-[150%]">Chanel</h4>
+        </div>
+
+        <div class="p-3 bg-[#EAEAEA] text-center rounded-[10px]">
+          <img src="/brandlogo/5th.png" class="mx-auto" alt="" />
+          <h4 class="text-[#606060] text-[24px] font-[500] leading-[150%]">Fila</h4>
+        </div>
+
+        <div class="p-3 bg-[#EAEAEA] text-center rounded-[10px]">
+          <img src="/brandlogo/6th.png" class="mx-auto" alt="" />
+          <h4 class="text-[#606060] text-[24px] font-[500] leading-[150%]">Puma</h4>
+        </div>
+
+        <div class="p-3 bg-[#EAEAEA] text-center rounded-[10px]">
+          <img src="/brandlogo/7th.png" class="mx-auto" alt="" />
+          <h4 class="text-[#606060] text-[24px] font-[500] leading-[150%]">Adidas</h4>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="bg-[#F9FAFC]">
+      <div class="container py-[60px]">
+
+        <div class="text-center">
+          <h1 class="text-[36px] font-[700] text-[#333333] leading-[120%]">Why Choose Us</h1>
+          <p class="text-[18px] font-[300] text-font-primary pt-[18px] leading-[130%]">
+            Lorem ipsum dolor sit amet consectetur. Congue lacinia
+            <br class="md:block hidden" />
+            tempor orci tellus sollicitudin morbi. Duis
+          </p>
+        </div>
+
+        <div class="flex flex-row mt-[30px] gap-x-20">
+          <div class="p-2 bg-[#EAEAEA] text-center rounded-[10px] w-[312px] h-[205.39px]">
+            <img src="/iconelogo/1st.png" class="w-10 h-10 mx-auto mt-[10px]" alt="" />
+            <h4 class="text-[20px] font-[500] py-1 text-font-primary leading-[130%]">
+              Package Consolidation
+            </h4>
+            <p class="text-[14px] font-[300] text-font-primary py-1 leading-[150%]">
+              Lorem ipsum dolor sit amet consectetur. Ut a donec neque mattis blandit fermentum id.
+              Sagittis eu egestas
+            </p>
+          </div>
+          <div class="p-2 bg-[#EAEAEA] text-center rounded-[10px] w-[312px] h-[205.39px]">
+            <img src="/iconelogo/2nd.png" class="w-10 h-10 mx-auto mt-[10px]" alt="" />
+            <h4 class="text-[20px] font-[500] py-1 text-font-primary leading-[130%]">
+              Security & Reliability
+            </h4>
+            <p class="text-[14px] font-[300] text-font-primary py-1 leading-[150%]">
+              Lorem ipsum dolor sit amet consectetur. Ut a donec neque mattis blandit fermentum id.
+              Sagittis eu egestas
+            </p>
+          </div>
+          <div class="p-2 bg-[#EAEAEA] text-center rounded-[10px] w-[312px] h-[205.39px]">
+            <img src="/iconelogo/3rd.png" class="w-10 h-10 mx-auto mt-[10px]" alt="" />
+            <h4 class="text-[20px] font-[500] py-1 text-font-primary leading-[130%]">
+              Real-time Tracking
+            </h4>
+            <p class="text-[14px] font-[300] text-font-primary py-1 leading-[150%]">
+              Lorem ipsum dolor sit amet consectetur. Ut a donec neque mattis blandit fermentum id.
+              Sagittis eu egestas
+            </p>
+          </div>
+          <div class="p-2 bg-[#EAEAEA] text-center rounded-[10px] w-[312px] h-[205.39px]">
+            <img src="assets/image/Frame (1).svg" class="w-10 h-10 mx-auto mt-[10px]" alt="" />
+            <h4 class="text-[20px] font-[500] py-1 text-font-primary leading-[130%]">
+              24/7 Support
+            </h4>
+            <p class="text-[14px] font-[300] text-font-primary py-1 leading-[150%]">
+              Lorem ipsum dolor sit amet consectetur. Ut a donec neque mattis blandit fermentum id.
+              Sagittis eu egestas
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="container py-[32px]">
+      <div class="text-center">
+        <h1 class="text-[36px] font-[700] text-[#333333] leading-[150%">How It Work</h1>
+        <p class="text-[18px] font-[300] text-[#606060] py-[2px] leading-[130%]">
+          Lorem ipsum dolor sit amet consectetur. Congue lacinia tempor orci tellus sollicitudin
+          morbi. Duis
+        </p>
+      </div>
+
+      <div class="relative">
+        <div class="pt-[60px] flex flex-col gap-7">
+          <div class="w-full flex items-center gap-5 p-5 border-b-[0.5px] border-[#C0C0C0]">
+            <img src="/number/image.png" class="w-[100px] h-[100px]" alt="" />
+            <div class="pb-2">
+              <h4
+                class="text-[32px] text-second-black hover:text-[#5ba65c] font-bold leading-[150%]"
+              >
+                Free Sign up
+              </h4>
+              <p class="text-[#606060] font-[300] text-[20px] leading-[130%]">
+                Lorem ipsum dolor sit amet consectetur. Parturient mattis mi pretium
+                <br class="hidden md:block" />
+                phasellus adipiscing faucibus ut nec vel. Pellentesque ac faucibus.
+              </p>
+            </div>
+          </div>
+          <div class="w-full flex items-center gap-5 p-5 border-b-[0.5px] border-[#C0C0C0]">
+            <img src="/number/2nd.png" class="w-[100px] h-[100px]" alt="" />
+            <div class="pb-2">
+              <h4
+                class="text-[32px] text-second-black hover:text-[#5ba65c] font-bold leading-[150%]"
+              >
+                Shop online
+              </h4>
+              <p class="text-[#606060] font-[300] text-[20px] leading-[130%]">
+                Lorem ipsum dolor sit amet consectetur. Parturient mattis mi pretium
+                <br class="hidden md:block" />
+                phasellus adipiscing faucibus ut nec vel. Pellentesque ac faucibus.
+              </p>
+            </div>
+          </div>
+          <div class="w-full flex items-center gap-5 p-5 border-b-[0.5px] border-[#C0C0C0]">
+            <img src="/number/3rd.png" class="w-[100px] h-[100px]" alt="" />
+            <div class="pb-2">
+              <h4
+                class="text-[32px] text-second-black hover:text-[#5ba65c] font-bold leading-[150%]"
+              >
+                Receive or pick up your packages
+              </h4>
+              <p class="text-[#606060] font-[300] text-[20px] leading-[130%]">
+                Lorem ipsum dolor sit amet consectetur. Parturient mattis mi pretium
+                <br class="hidden md:block" />
+                phasellus adipiscing faucibus ut nec vel. Pellentesque ac faucibus.
+              </p>
+            </div>
+          </div>
+          <div class="w-full flex items-center gap-5 p-5 border-b-[0.5px] border-[#C0C0C0]">
+            <img src="/number/4th.png" class="w-[100px] h-[100px]" alt="" />
+            <div class="pb-2">
+              <h4
+                class="text-[32px] text-second-black hover:text-[#5ba65c] font-bold leading-[150%]"
+              >
+                Tips for you!
+              </h4>
+              <p class="text-[#606060] font-[300] text-[20px] leading-[130%]">
+                Lorem ipsum dolor sit amet consectetur. Parturient mattis mi pretium
+                <br class="hidden md:block" />
+                phasellus adipiscing faucibus ut nec vel. Pellentesque ac faucibus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="absolute top-25 right-0">
+          <img src="assets/image/image (1).png" class="" alt="" />
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+<section class="container bg-[#F9FAFC] py-[30px]">
+    
+      <div class="text-center">
+        <h1 class="text-[36px] font-[700] text-[#333333] leading-[150%]">
+          Frequently asked question
+        </h1>
+        <p class="text-[18px] font-[300] text-font-primary py-2 leading-[130%]">
+          Lorem ipsum dolor sit amet consectetur. Congue lacinia
+          <br class="hidden md:block" />
+          tempor orci tellus sollicitudin morbi. Duis
+        </p>
+      </div>
+    
+      <div class="flex flex-row justify-between gap-x-4 my-[32px]">
+        <div class="flex flex-col gap-y-4 w-[50%]">
+          <details
+            class="bg-[#f1f6f2] shadow-box rounded-2xl p-5 group transition"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+            >
+              <span class="text-2xl text-font-primary font-[500]"
+                >Lorem ipsum dolor sit amet consectetur. Quis id vitae
+                consectetur urna?</span
+              >
+              <span
+                class="flex items-center justify-center w-[60px] h-[40px] rounded-lg bg-[#daecde] group-open:bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-green-600 font-bold transition  group-open:text-white"
+              >
+                <span class="group-open:hidden text-[28px] pb-1 font-medium">+</span>
+                <span class="hidden group-open:inline text-[28px] pb-1">−</span>
+              </span>
+            </summary>
+            <p
+              class="text-font-primary font-[300] text-[20px] leading-[28px] py-2"
+            >
+              Orthosphere is an AI-powered health assistant offering <br />
+              personalized care, smart doctor consultations, and lab <br />
+              test insights to support your health decisions.
+            </p>
+          </details>
+          <details
+            class="bg-[#f1f6f2] shadow-box rounded-2xl p-5 group transition"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+            >
+              <span class="text-2xl text-font-primary font-[500]"
+                >Lorem ipsum dolor sit amet consectetur. Sit amet pellentesque id at eget?</span
+              >
+              <span
+                class="flex items-center justify-center w-[60px] h-[40px] rounded-lg bg-[#daecde] group-open:bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-green-600 font-bold transition  group-open:text-white"
+              >
+                <span class="group-open:hidden text-[28px] pb-1 font-medium">+</span>
+                <span class="hidden group-open:inline text-[28px] pb-1">−</span>
+              </span>
+            </summary>
+            <p
+              class="text-font-primary font-[300] text-[20px] leading-[28px] py-2"
+            >
+              Orthosphere is an AI-powered health assistant offering <br />
+              personalized care, smart doctor consultations, and lab <br />
+              test insights to support your health decisions.
+            </p>
+          </details>
+          <details
+            class="bg-[#f1f6f2] shadow-box rounded-2xl p-5 group transition"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+            >
+              <span class="text-2xl text-font-primary font-[500]"
+                >Lorem ipsum dolor sit amet consectetur. Quis id vitae consectetur urna?</span
+              >
+              <span
+                class="flex items-center justify-center w-[60px] h-[40px] rounded-lg bg-[#daecde] group-open:bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-green-600 font-bold transition  group-open:text-white"
+              >
+                <span class="group-open:hidden text-[28px] pb-1 font-medium">+</span>
+                <span class="hidden group-open:inline text-[28px] pb-1">−</span>
+              </span>
+            </summary>
+            <p
+              class="text-font-primary font-[300] text-[20px] leading-[28px] py-2"
+            >
+              Orthosphere is an AI-powered health assistant offering <br />
+              personalized care, smart doctor consultations, and lab <br />
+              test insights to support your health decisions.
+            </p>
+          </details>
+          <details
+            class="bg-[#f1f6f2] shadow-box rounded-2xl p-5 group transition"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+            >
+              <span class="text-2xl text-font-primary font-[500]"
+                >Lorem ipsum dolor sit amet consectetur. Pellentesque vestibulum?</span
+              >
+              <span
+                class="flex items-center justify-center w-[60px] h-[40px] rounded-lg bg-[#daecde] group-open:bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-green-600 font-bold transition  group-open:text-white"
+              >
+                <span class="group-open:hidden text-[28px] pb-1 font-medium">+</span>
+                <span class="hidden group-open:inline text-[28px] pb-1">−</span>
+              </span>
+            </summary>
+            <p
+              class="text-font-primary font-[300] text-[20px] leading-[28px] py-2"
+            >
+              Orthosphere is an AI-powered health assistant offering <br />
+              personalized care, smart doctor consultations, and lab <br />
+              test insights to support your health decisions.
+            </p>
+          </details>
+          
+        </div>
+
+        <div class="w-[50%] flex flex-col gap-y-4">
+          <details
+            class="bg-[#f1f6f2] shadow-box rounded-2xl p-5 group transition"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+            >
+              <span class="text-2xl text-font-primary font-[500]"
+                >Lorem ipsum dolor sit amet?</span
+              >
+              <span
+                class="flex items-center justify-center w-[60px] h-[40px] rounded-lg bg-[#daecde] group-open:bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-green-600 font-bold transition  group-open:text-white"
+              >
+                <span class="group-open:hidden text-[28px] pb-1 font-medium">+</span>
+                <span class="hidden group-open:inline text-[28px] pb-1">−</span>
+              </span>
+            </summary>
+            <p
+              class="text-font-primary font-[300] text-[20px] leading-[28px] py-2"
+            >
+              Orthosphere is an AI-powered health assistant offering <br />
+              personalized care, smart doctor consultations, and lab <br />
+              test insights to support your health decisions.
+            </p>
+          </details>
+          <details
+            class="bg-[#f1f6f2] shadow-box rounded-2xl p-5 group transition"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+            >
+              <span class="text-2xl text-font-primary font-[500]"
+                >Lorem ipsum dolor sit amet consectetur. Tempus ornare ut lorem dignissim fringilla?</span
+              >
+              <span
+                class="flex items-center justify-center w-[60px] h-[40px] rounded-lg bg-[#daecde] group-open:bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-green-600 font-bold transition  group-open:text-white"
+              >
+                <span class="group-open:hidden text-[28px] pb-1 font-medium">+</span>
+                <span class="hidden group-open:inline text-[28px] pb-1">−</span>
+              </span>
+            </summary>
+            <p
+              class="text-font-primary font-[300] text-[20px] leading-[28px] py-2"
+            >
+              Orthosphere is an AI-powered health assistant offering <br />
+              personalized care, smart doctor consultations, and lab <br />
+              test insights to support your health decisions.
+            </p>
+          </details>
+          <details
+            class="bg-[#f1f6f2] shadow-box rounded-2xl p-5 group transition"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+            >
+              <span class="text-2xl text-font-primary font-[500]"
+                >Lorem ipsum dolor sit amet consectetur?</span
+              >
+              <span
+                class="flex items-center justify-center w-[60px] h-[40px] rounded-lg bg-[#daecde] group-open:bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-green-600 font-bold transition  group-open:text-white"
+              >
+                <span class="group-open:hidden text-[28px] pb-1 font-medium">+</span>
+                <span class="hidden group-open:inline text-[28px] pb-1">−</span>
+              </span>
+            </summary>
+            <p
+              class="text-font-primary font-[300] text-[20px] leading-[28px] py-2"
+            >
+              Orthosphere is an AI-powered health assistant offering <br />
+              personalized care, smart doctor consultations, and lab <br />
+              test insights to support your health decisions.
+            </p>
+          </details>
+          <details
+            class="bg-[#f1f6f2] shadow-box rounded-2xl p-5 group transition"
+          >
+            <summary
+              class="flex justify-between items-center cursor-pointer text-lg font-semibold"
+            >
+              <span class="text-2xl text-font-primary font-[500]"
+                >Lorem ipsum dolor sit amet consectetur. Pretium tortor in eros?</span
+              >
+              <span
+                class="flex items-center justify-center w-[60px] h-[40px] rounded-lg bg-[#daecde] group-open:bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-green-600 font-bold transition  group-open:text-white"
+              >
+                <span class="group-open:hidden text-[28px] pb-1 font-medium">+</span>
+                <span class="hidden group-open:inline text-[28px] pb-1">−</span>
+              </span>
+            </summary>
+            <p
+              class="text-font-primary font-[300] text-[20px] leading-[28px] py-2"
+            >
+              Orthosphere is an AI-powered health assistant offering <br />
+              personalized care, smart doctor consultations, and lab <br />
+              test insights to support your health decisions.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+   
+
+    <section class="container bg-secondary-white py-[32px]">
+      <h1 class="text-[36px] font-[700] text-[#333333] leading-[150%]">Our Blog</h1>
+
+      <div class="h-auto w-auto flex flex-row justify-between">
+        <p class="text-[18px] w-auto font-[300] text-[#606060] leading-[130%]">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+          <br />
+          been the industry's standard dummy text ever since the 1500s
+        </p>
+
+        <div class="flex flex-row gap-x-3">
+          <button
+            class="h-auto w-auto py-3 px-[40.5px] text-[#89CE14] bg-transparent border-[1px] border ease-in-out duration-500 rounded-full hover:border-solid border-[#89CE14] hover:text-white hover:bg-[#89CE14] cursor-pointer text-base font-[590]"
+          >
+            View All
+          </button>
+        </div>
+      </div>
+
+      <div class="flex flex-row  justify-between gap-x-20 items-center py-[30px]">
+        <div class="w-[350px] h-[420px] relative rounded-[8px] shadow-secondary">
+          <img
+            src="cad/1st.png"
+            alt="Consultation"
+            class="w-full object-cover rounded-t-lg"
+          />
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-bold text-[#555555] leading-[100%] mt-[20px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-font-primary leading-[23.57px] pt-3">
+              Schedule a meeting with our experienced <br />
+              legal team to discuss your case and <br />
+              understand your needs.
+            </p>
+          </div>
+          <button
+            href="#"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+            bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
+          >
+            READ MORE
+          </button>
+        </div>
+        <div class="w-[350px] h-[420px] relative rounded-[8px] shadow-secondary">
+          <img
+            src="cad/2nd.png"
+            alt="Consultation"
+            class="w-full object-cover rounded-t-lg"
+          />
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-bold text-[#555555] leading-[100%] mt-[20px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-font-primary leading-[23.57px] pt-3">
+              Schedule a meeting with our experienced <br />
+              legal team to discuss your case and <br />
+              understand your needs.
+            </p>
+          </div>
+          <button
+            href="#"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+            bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
+          >
+            READ MORE
+          </button>
+        </div>
+        <div class="w-[350px] h-[420px] relative rounded-[8px] shadow-secondary">
+          <img
+            src="cad/3rd.png"
+            alt="Consultation"
+            class="w-full object-cover rounded-t-lg"
+          />
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-bold text-[#555555] leading-[100%] mt-[20px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-font-primary leading-[23.57px] pt-3">
+              Schedule a meeting with our experienced <br />
+              legal team to discuss your case and <br />
+              understand your needs.
+            </p>
+          </div>
+          <button
+            href="#"
+            class="absolute bottom-[-20px] left-[95px] inline-block px-8 py-3 mt-[10px] rounded-xl
+             bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white font-semibold shadow hover:scale-105 transform transition"
+          >
+            READ MORE
+          </button>
+        </div>
+      </div>
+
+      <!-- <div class="flex flex-row justify-between gap-x-20 items-center py-24">
+        <article class="w-[424.29px] h-auto rounded-[8px] shadow-md">
+          <div class="overflow-hidden">
+            <img
+              src="assets/image/Rectangle 2041.png"
+              alt="Consultation"
+              class="w-[424px] object-cover rounded-[8px]"
+            />
+          </div>
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-[700] text-[#555555] leading-[100%] mt-[7px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-[#606060] mt-[8px]">
+              Schedule a meeting with our experienced legal team to discuss your case and understand
+              your needs.
+            </p>
+
+            <a
+              href="#"
+              class="inline-block px-8 py-3 mt-[10px] rounded-full bg-gradient-to-r from-green-600 to-green-400 text-white font-semibold shadow hover:scale-105 transform transition"
+            >
+              READ MORE
+            </a>
+          </div>
+        </article>
+        <article class="w-[424.29px] h-auto rounded-[8px] shadow-md">
+          <div class="overflow-hidden">
+            <img
+              src="assets/image/Rectangle 2042.png"
+              alt="Consultation"
+              class="w-[424px] object-cover rounded-[8px]"
+            />
+          </div>
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-[700] text-[#555555] leading-[100%] mt-[7px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-[#606060] mt-[8px]">
+              Schedule a meeting with our experienced legal team to discuss your case and understand
+              your needs.
+            </p>
+
+            <a
+              href="#"
+              class="inline-block px-8 py-3 mt-[10px] rounded-full bg-gradient-to-r from-green-600 to-green-400 text-white font-semibold shadow hover:scale-105 transform transition"
+            >
+              READ MORE
+            </a>
+          </div>
+        </article>
+        <article class="w-[424.29px] h-auto rounded-[8px] shadow-md">
+          <div class="overflow-hidden">
+            <img
+              src="assets/image/Rectangle 2042 (1).png"
+              alt="Consultation"
+              class="w-[424px] object-cover rounded-[8px]"
+            />
+          </div>
+
+          <div class="text-center">
+            <h3 class="text-[25px] font-[700] text-[#555555] leading-[100%] mt-[7px]">
+              Initial Consultation
+            </h3>
+
+            <p class="text-[16px] font-[400] text-[#606060] mt-[8px]">
+              Schedule a meeting with our experienced legal team to discuss your case and understand
+              your needs.
+            </p>
+
+            <a
+              href="#"
+              class="inline-block px-8 py-3 mt-[10px] rounded-full bg-gradient-to-r from-green-600 to-green-400 text-white font-semibold shadow hover:scale-105 transform transition"
+            >
+              READ MORE
+            </a>
+          </div>
+        </article>
+      </div> -->
+    </section>
+
+    <section class="py-[16px]">
+      <div class="container">
+        <h1 class="text-[36px] font-[700] leading-[150%] text-[#333333]">Our Customer Feedback</h1>
+        <div class="h-auto w-auto flex flex-row justify-between py-5">
+          <p class="text-[17px] font-[300] max-w-[600px] text-[#606060] leading-[130%]">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard dummy text ever
+          </p>
+
+          <div class="flex flex-row gap-x-3">
+           <button class="w-[40px] h-[40px] bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white rounded-full
+                         border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]"
+
+           ><ion-icon name="chevron-back-outline"></ion-icon></button>
+
+          <button class="w-[40px] h-[40px] bg-linear-to-r from-[#6DA015] to-[#46C0A2] text-white rounded-full
+                         border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2] ">
+                         <ion-icon name="chevron-forward-outline"></ion-icon></button>
+          </div>
+        </div>
+
+        <div class="flex flex-row justify-between gap-x-20">
+          <div class="p-4 h-[300px] w-[429px] bg-secondary-white">
+            <div class="flex flex-row items-center justify-between">
+              <div><img src="people2nd.png" alt="" /></div>
+              <div class="text-[#46C0A2]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+
+            <h4 class="text-[#555555] py-2 text-[20px] font-[600]">Floyd Miles</h4>
+            <p class="text-[18px] font-[400] py-2 leading-[150%]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim velit mollit.
+            </p>
+          </div>
+
+          <div class="p-4 h-[300px] w-[429px] bg-secondary-white">
+            <div class="flex flex-row items-center justify-between">
+              <div><img src="people1.png" alt="" /></div>
+              <div class="text-[#46C0A2]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+
+            <h4 class="text-[#555555] py-2 text-[20px] font-[600]">Ronald Richards</h4>
+            <p class="text-[18px] font-[400] py-2 leading-[150%]">
+              ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+              mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+
+          <div class="p-4 h-[300px] w-[429px] bg-secondary-white">
+            <div class="flex flex-row items-center justify-between">
+              <div><img src="assets/image/Frame 2147224201.png" alt="" /></div>
+              <div class="text-[#46C0A2]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+            </div>
+
+            <h4 class="text-[#555555] py-2 text-[20px] font-[600]">Savannah Nguyen</h4>
+            <p class="text-[18px] font-[400] py-2 leading-[150%]">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+              officia consequat duis enim velit mollit. Exercitation veniam consequat sunt ......
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mt-20 pb-20">
+      <div class="relative overflow-hidden">
+        <div class="w-[277.27px] h-[290.88px] absolute top-[-49px] 
+          right-[-110px] text-[#606060]">
+          <img src="assets/image/border2.png" alt="">
+        </div>
+        <div class="py-30 text-center bg-linear-to-r from-[#6DA015] to-[#46C0A2]   h-auto w-auto  rounded-[20px]">
+        <h1 class="text-[36px] text-white font-[700]">Hassle-Free Shipping, Every Time</h1>
+        <p class="text-[16px] text-[#FFFFFF] font-[400] leading-[150%]">
+          Inscreva-se em nossa newsletter e tenha acesso exclusivo a conteúdos educacionais, dicas
+          de <br />
+          aprendizado de idiomas, atualizações sobre novos cursos e promoções especiais.
+        </p>
+        <button
+          class="text-white bg-[#0B2A77] hover:bg-red-500 mt-10 text-[#00303d] font-semibold px-6 py-3 rounded-full text-lg transition-all"
+        >
+          Sign Up For Free
+        </button>
+      </div>
+      <div class="w-[277.27px] h-[290.88px] absolute bottom-[-110px] overflow-x-auto
+
+  left-[-10px] text-[#FFFFFF]">
+        <img src="assets/image/border1.png" alt="">
+      </div>
+      </div>
+    
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[#0B2A77] h-auto w-auto">
+      <div class="container">
+        <div class="flex flex-row py-[25px] gap-x-20">
+          <div class="w-1/3">
+            <img src="/navbar/logo.png" alt="" />
+            <p class="text-[16px] text-[#FFFFFF] max-w-[449px] py-[5px] pb-[30px] leading-[150%]">
+              Lorem ipsum dolor sit amet consectetur. Neque consequat tristique bibendum facilisis
+              odio congue enim. Tempor justo proin faucibus praesent ac. Dui nunc sit aliquam eget
+              adipiscing feugiat turpis. Ut eleifend blandit suspendisse sollicitudin amet dictum
+              mauris.
+            </p>
+          </div>
+
+          <div class="flex flex-row justify-between w-1/3">
+            <div class="">
+              <h3 class="text-[#6DA015] font-[700] text-[18]">Support</h3>
+
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> FAQ</a>
+              </li>
+              <li class="text-[#FAFAFB] py-2 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Return & Exchange</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Shipping</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Brand</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Review</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Help</a>
+              </li>
+            </div>
+
+            <div class="">
+              <h3 class="text-[#6DA015] font-[700] text-[18]">Company</h3>
+
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Service</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Restricted Items</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Terms & Conditions</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Privacy Policy</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Blog</a>
+              </li>
+              <li class="text-[#FAFAFB] py-3 text-[16px] leading-[150%] font-[300] list-none">
+                <a href="#"> Contact Us</a>
+              </li>
+            </div>
+          </div>
+
+          <div class="w-1/3">
+            <h3 class="text-[#6DA015] font-[700] text-[18px]">Join a Newsletter</h3>
+            <div class="py-3">
+              <label class="text-[#FAFAFB] font-[300] text-[16px] leading-[150%]">Your Email</label>
+            </div>
+
+            <div class="h-auto flex items-center justify-center to-[#00303d] py-10">
+              <div class="flex items-center bg-white rounded-full overflow-hidden shadow-lg">
+                <input
+                  type="text"
+                  placeholder="Your E-mail address"
+                  class="w-auto bg-transparent text-white p-3 placeholder:text-[18px] placeholder:font-[100] placeholder:text-[#313131] text-lg focus:outline-none"
+                />
+                <button
+                  class="h-auto w-auto py-2 px-[20px] mr-1 text-white bg-linear-to-r from-[#6DA015] to-[#46C0A2] border-[1px] border-transparent ease-in-out duration-500 rounded-full hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14] hover:bg-transparent cursor-pointer text-base font-[590]"
+                >
+                  Subscrube
+                </button>
+              </div>
+            </div>
+
+            <div class=" h-auto w-auto flex flex-row gap-x-5">
+              <button class="text-white w-[40px] h-[40px]  bg-linear-to-r from-[#6DA015] to-[#46C0A2] rounded-full
+               border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]">
+               <i class="fa-brands fa-facebook-f"></i></button>
+
+
+              <button class="text-white w-[40px] h-[40px]  bg-linear-to-r from-[#6DA015] to-[#46C0A2] rounded-full
+               border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]"><i class="fa-brands fa-instagram"></i></button>
+              <button class="text-white w-[40px] h-[40px]  bg-linear-to-r from-[#6DA015] to-[#46C0A2] rounded-full
+               border-[1px] border-transparent ease-in-out duration-500
+                         hover:border-solid hover:border-[#89CE14] hover:text-[#89CE14]
+                         hover:bg-transparent cursor-pointer text-base hover:bg-[#46C0A2]"><i class="fa-brands fa-twitter"></i></button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center bg-blue-500/50 z-50 h-[64px p-5">
+        <h4 class="text-[#FFFFFF] text-[16px] font-[100]">
+          © SWIFT EXPRESS CARGO 2025, All Rights Reserved
+        </h4>
+      </div>
+    </footer>
+    <!-- <-----------footer-----------section-------end------------------->
+
+    <script src="index.js"></script>
+  </body>
+</html>
